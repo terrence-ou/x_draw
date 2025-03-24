@@ -7,6 +7,7 @@ function App() {
 
   return (
     <HeroUIProvider>
+      <h1>X-Draw</h1>
       <Button color="secondary">Button</Button>
     </HeroUIProvider>
   );
