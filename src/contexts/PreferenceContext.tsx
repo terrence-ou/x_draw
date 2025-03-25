@@ -1,8 +1,13 @@
 import { createContext, useState } from "react";
-import { THEME_KEY, LANGUAGE_KEY } from "@/consts";
+import {
+  THEME_KEY,
+  LANGUAGE_KEY,
+  AvailableThemesType,
+  AvailableLanguagesType,
+} from "@/consts";
 interface PreferenceProps {
-  theme: "light" | "dark";
-  language: "en" | "zh";
+  theme: AvailableThemesType;
+  language: AvailableLanguagesType;
   toggleTheme: () => void;
   updateLanguage: (newLanguage: PreferenceProps["language"]) => void;
 }
