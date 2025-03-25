@@ -6,7 +6,7 @@ function App() {
   return (
     <PreferenceProvider>
       <HeroUIProvider>
-        <h1>X-Draw</h1>
+        <h1>YouTube Draw</h1>
         <Header />
       </HeroUIProvider>
     </PreferenceProvider>
