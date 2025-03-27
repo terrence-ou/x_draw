@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube Draw</title>
   </head>
-  <body id="body">
+  <body>
+    <div id="root"></div>
     <script>
       // This script avoid theme blinking when loading the page
       const theme = localStorage.getItem("youtube_draw_theme");
       if (theme && theme === "dark") {
-        document.body.classList.add("dark");
+        document.documentElement.classList.add("dark");
       }
     </script>
 

@@ -44,9 +44,9 @@ const PreferenceProvider = ({ children }: { children: React.ReactNode }) => {
     setTheme((prevTheme) => {
       const newTheme = prevTheme === "light" ? "dark" : "light";
       if (newTheme === "dark") {
-        document.body.classList.add("dark");
+        document.documentElement.classList.add("dark");
       } else {
-        document.body.classList.remove("dark");
+        document.documentElement.classList.remove("dark");
       }
       localStorage.setItem(THEME_KEY, newTheme);
       return newTheme;
