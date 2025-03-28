@@ -9,6 +9,7 @@ import {
   DropdownTrigger,
   DropdownItem,
 } from "@heroui/react";
+import { Moon, Sun } from "lucide-react";
 
 const Header = () => {
   const { theme, language, toggleTheme, updateLanguage } = useContext(PreferenceContext);
@@ -18,8 +19,12 @@ const Header = () => {
       <div>
         <h1 className="text-[1.5rem] font-semibold tracking-wide">YouTube Draw</h1>
       </div>
-      <div className="flex gap-5 items-center">
-        <Switch isSelected={theme === "dark"} onValueChange={toggleTheme} />
+      <div className="flex gap-7 items-center">
+        <div className="flex items-center justify-center gap-2">
+          <Sun strokeWidth={1.8} size={24} />
+          <Switch isSelected={theme === "dark"} onValueChange={toggleTheme} />
+          <Moon strokeWidth={1.5} size={24} />
+        </div>
         <Dropdown>
           <DropdownTrigger>
             <Button className="min-w-[1rem] w-[3rem] h-8" variant="bordered">
