@@ -22,12 +22,19 @@ const Header = () => {
       <div className="flex gap-7 items-center">
         <div className="flex items-center justify-center gap-2">
           <Sun strokeWidth={1.8} size={24} />
-          <Switch isSelected={theme === "dark"} onValueChange={toggleTheme} />
+          <Switch
+            isSelected={theme === "dark"}
+            onValueChange={toggleTheme}
+            color="secondary"
+          />
           <Moon strokeWidth={1.5} size={24} />
         </div>
         <Dropdown>
           <DropdownTrigger>
-            <Button className="min-w-[1rem] w-[3rem] h-8" variant="bordered">
+            <Button
+              className="min-w-[1rem] w-[3rem] h-8 text-default-700"
+              variant="bordered"
+            >
               {languageDiplay}
             </Button>
           </DropdownTrigger>

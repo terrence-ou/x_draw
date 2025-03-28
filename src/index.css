@@ -14,8 +14,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @apply text-default-800;
 }
 
-main {
-  @apply h-dvh flex flex-col items-center justify-center bg-background text-overlay;
-}
+/* main {
+  @apply h-dvh flex flex-col items-center justify-center bg-background;
+} */
